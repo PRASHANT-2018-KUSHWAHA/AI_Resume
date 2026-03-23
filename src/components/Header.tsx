@@ -38,22 +38,6 @@ export const Header: React.FC<HeaderProps> = ({ activeView, onViewChange }) => {
           </button>
         ))}
       </nav>
-
-      <div className="flex items-center space-x-6">
-        <div className="flex space-x-4 text-primary">
-          <button className="p-2 hover:bg-primary/10 rounded-lg transition-colors"><Radio size={18} /></button>
-          <button className="p-2 hover:bg-primary/10 rounded-lg transition-colors"><Cpu size={18} /></button>
-          <button className="p-2 hover:bg-primary/10 rounded-lg transition-colors"><Server size={18} /></button>
-        </div>
-        <div className="w-8 h-8 rounded-full border border-primary/30 overflow-hidden">
-          <img 
-            src="https://picsum.photos/seed/user/100" 
-            alt="Profile" 
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-      </div>
     </header>
   );
 };

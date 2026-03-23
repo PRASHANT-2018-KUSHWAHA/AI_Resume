@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-surface-dim selection:bg-primary/30 selection:text-primary overflow-x-hidden">
       <Header activeView={activeView} onViewChange={handleViewChange} />
-      <Sidebar activeView={activeView} onViewChange={handleViewChange} />
+      // <Sidebar activeView={activeView} onViewChange={handleViewChange} />
       
       <main className="relative z-10">
         <AnimatePresence mode="wait">
