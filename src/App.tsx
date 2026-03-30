@@ -8,20 +8,37 @@ import { HomeView } from './views/HomeView';
 import { ArchitectureView } from './views/ArchitectureView';
 import { ProjectsView } from './views/ProjectsView';
 import { CloudView } from './views/CloudView';
+import { ExperienceView } from './views/ExperienceView';
 
 export default function App() {
   const [activeView, setActiveView] = useState<View>('HOME');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // Handle view change with scroll to top
   const handleViewChange = (view: View) => {
     setActiveView(view);
+    setIsSidebarOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <div className="min-h-screen bg-surface-dim selection:bg-primary/30 selection:text-primary overflow-x-hidden">
-      <Header activeView={activeView} onViewChange={handleViewChange} />
-      // <Sidebar activeView={activeView} onViewChange={handleViewChange} />
+      <Header 
+        activeView={activeView} 
+        onViewChange={handleViewChange} 
+        onMenuClick={() => setIsSidebarOpen(true)} 
+      />
+      
+      <AnimatePresence>
+        {isSidebarOpen && (
+          <Sidebar 
+            activeView={activeView} 
+            onViewChange={handleViewChange} 
+            isOpen={isSidebarOpen}
+            onClose={() => setIsSidebarOpen(false)}
+          />
+        )}
+      </AnimatePresence>
       
       <main className="relative z-10">
         <AnimatePresence mode="wait">
@@ -36,6 +53,7 @@ export default function App() {
             {activeView === 'ARCHITECTURE' && <ArchitectureView />}
             {activeView === 'PROJECTS' && <ProjectsView />}
             {activeView === 'CLOUD' && <CloudView />}
+            {activeView === 'EXPERIENCE' && <ExperienceView />}
           </motion.div>
         </AnimatePresence>
       </main>

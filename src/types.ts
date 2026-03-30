@@ -1,4 +1,19 @@
-export type View = 'HOME' | 'ARCHITECTURE' | 'PROJECTS' | 'CLOUD';
+export type View = 'HOME' | 'ARCHITECTURE' | 'PROJECTS' | 'CLOUD' | 'EXPERIENCE';
+
+export interface Experience {
+  id: string;
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  highlights: string[];
+  tech: string[];
+}
+
+export interface SkillGroup {
+  category: string;
+  skills: string[];
+}
 
 export interface Project {
   id: string;

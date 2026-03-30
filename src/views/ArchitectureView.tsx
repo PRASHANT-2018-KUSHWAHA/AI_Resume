@@ -7,7 +7,7 @@ export const ArchitectureView: React.FC = () => {
     <div className="pt-12 pb-24 px-6 md:pl-24 max-w-7xl mx-auto">
       <div className="mb-12">
         <nav className="flex items-center font-mono text-[10px] tracking-[0.2em] text-primary/60 uppercase">
-          <span>ARCH_OS</span>
+          <span>TECHNICAL_ARCHITECT</span>
           <span className="mx-3 text-outline-variant">//</span>
           <span>MODULES</span>
           <span className="mx-3 text-outline-variant">//</span>
@@ -93,7 +93,7 @@ export const ArchitectureView: React.FC = () => {
           <div className="bg-surface-container-low rounded-xl p-6 border border-primary/5">
             <h3 className="font-headline text-[10px] uppercase text-on-surface-variant/40 mb-4 px-2 tracking-widest">Tech_Stack_Trace</h3>
             <div className="space-y-2">
-              {['React v18.2', 'TypeScript v5.0', 'Webpack Federation', 'Docker / K8s'].map((tech) => (
+              {['Angular (v1-20)', 'React.js / Next.js', 'Node.js / GraphQL', 'AWS (Lambda/S3/RDS)', 'Nx / Module Federation'].map((tech) => (
                 <div key={tech} className="flex items-center justify-between p-3 rounded bg-surface-container-highest hover:bg-primary/10 transition-colors group">
                   <span className="text-xs font-mono">{tech}</span>
                   <Verified size={14} className="text-primary opacity-0 group-hover:opacity-100 transition-opacity" />

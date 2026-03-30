@@ -154,18 +154,18 @@ export const ProjectsView: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
         <div className="bg-surface-container-low p-8 rounded-xl border-t border-primary/5">
           <Cpu size={24} className="text-primary mb-4" />
-          <h5 className="font-headline font-bold text-on-surface text-sm uppercase mb-3">DevOps_Cycle</h5>
-          <p className="text-xs text-on-surface-variant leading-relaxed uppercase">Automated CI/CD via GitHub Actions with canary deployments to EKS.</p>
+          <h5 className="font-headline font-bold text-on-surface text-sm uppercase mb-3">DevOps_Excellence</h5>
+          <p className="text-xs text-on-surface-variant leading-relaxed uppercase">Overhauled CI/CD pipelines and automated complex build processes, reducing release effort by ~40%.</p>
         </div>
         <div className="bg-surface-container-low p-8 rounded-xl border-t border-primary/5">
           <Shield size={24} className="text-primary mb-4" />
-          <h5 className="font-headline font-bold text-on-surface text-sm uppercase mb-3">Auth_Integrity</h5>
-          <p className="text-xs text-on-surface-variant leading-relaxed uppercase">OAuth2.0 implementation with rotating JWKS for cross-service trust.</p>
+          <h5 className="font-headline font-bold text-on-surface text-sm uppercase mb-3">Security_Compliance</h5>
+          <p className="text-xs text-on-surface-variant leading-relaxed uppercase">Implemented HIPAA-compliant systems ensuring 100% data integrity and secure payment processing via Stripe/Razorpay.</p>
         </div>
         <div className="bg-surface-container-low p-8 rounded-xl border-t border-primary/5">
           <BarChart3 size={24} className="text-primary mb-4" />
-          <h5 className="font-headline font-bold text-on-surface text-sm uppercase mb-3">Monitoring_Grid</h5>
-          <p className="text-xs text-on-surface-variant leading-relaxed uppercase">Prometheus & Grafana dashboarding for 99.99% availability tracking.</p>
+          <h5 className="font-headline font-bold text-on-surface text-sm uppercase mb-3">Performance_Optimization</h5>
+          <p className="text-xs text-on-surface-variant leading-relaxed uppercase">Optimized high-concurrency backend services using GraphQL and MongoDB, achieving 20–25% faster query response.</p>
         </div>
       </div>
     </div>
