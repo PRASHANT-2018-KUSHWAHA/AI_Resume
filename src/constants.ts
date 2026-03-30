@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
   linkedin: 'https://www.linkedin.com/in/prashant-kushwaha-96a230142',
   github: 'https://github.com/PRASHANT-2018-KUSHWAHA',
   location: 'Bengaluru, Karnataka, India',
-  summary: 'Strategic Technical Architect with 7+ years of progressive experience designing and implementing scalable SaaS architectures. Expert in Micro Frontend (MFE) patterns, Nx Monorepos, and cloud-native AWS solutions. Proven ability to lead cross-functional engineering teams and deliver enterprise-grade solutions in fintech and analytics. Specialized in digital transformation initiatives, migrating legacy systems to modern, modular architectures while maintaining 100% code quality standards through SOLID principles and test-driven development.'
+  summary: 'Strategic Technical Architect with 8+ years of progressive experience designing and implementing scalable SaaS architectures. Expert in Micro Frontend (MFE) patterns, Nx Monorepos, and cloud-native AWS solutions. Proven ability to lead cross-functional engineering teams and deliver enterprise-grade solutions in fintech and analytics. Specialized in digital transformation initiatives, migrating legacy systems to modern, modular architectures while maintaining 100% code quality standards through SOLID principles and test-driven development.'
 };
 
 export const EXPERIENCES: Experience[] = [

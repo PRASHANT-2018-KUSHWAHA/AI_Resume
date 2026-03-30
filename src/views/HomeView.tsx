@@ -83,7 +83,7 @@ export const HomeView: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
             </span>
-            SYSTEM_STATUS: OPTIMIZED // 7+ YEARS EXP
+            SYSTEM_STATUS: OPTIMIZED // 8+ YEARS EXP
           </motion.div>
 
           <motion.h1 
